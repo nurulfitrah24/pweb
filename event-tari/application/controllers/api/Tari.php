@@ -7,6 +7,7 @@ class Tari extends REST_Controller
   function __construct()
   {
     parent::__construct();
+    header("Access-Control-Allow-Origin: *");
     $this->load->model('tari_model');
   }
 

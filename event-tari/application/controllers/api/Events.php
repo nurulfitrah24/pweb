@@ -7,6 +7,7 @@ class Events extends REST_Controller
   function __construct()
   {
     parent::__construct();
+    header("Access-Control-Allow-Origin: *");
     $this->load->model('events_model');
   }
 
